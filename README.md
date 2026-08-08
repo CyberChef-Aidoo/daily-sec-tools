@@ -1,93 +1,116 @@
-# Daily Sec Tools
-A daily log of cybersecurity tools our team learns and documents one tool, one write-up, one day at a time.
+<div align="center">
 
-## About
+# 🛡️ Daily Sec Tools
+
+### One tool a day. Every day. Together.
+
+A team learning log where we pick, run, and document a new cybersecurity tool — one write-up at a time.
+
+![Tools Logged](https://img.shields.io/badge/tools%20logged-1-blue)
+![Contributors](https://img.shields.io/badge/contributors-open-brightgreen)
+![Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/badge/license-internal-lightgrey)
+
+</div>
+
+---
+
+## 📖 Table of Contents
+
+- [About](#-about)
+- [How It Works](#-how-it-works)
+- [Repository Structure](#-repository-structure)
+- [Tool Index](#-tool-index)
+- [Ground Rules](#-ground-rules)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 🎯 About
+
 This repository is a shared learning journal. Each day, a team member picks a new cybersecurity tool, spends time exploring it, and documents what they learned in a short, structured write-up. Over time this becomes a searchable reference library built entirely by the team, for the team.
 
 **Goals:**
-- Build hands-on familiarity with a wide range of security tools (recon, scanning, exploitation, forensics, defense, etc.)
-- Create a lightweight, reusable knowledge base for future projects and interviews
-- Hold each other accountable with a consistent daily/weekly cadence
-- Practice clear technical writing
 
-## How it works
+| 🎯 | Goal |
+|----|------|
+| 🔧 | Build hands-on familiarity with tools across recon, scanning, exploitation, forensics, and defense |
+| 📚 | Create a lightweight, reusable knowledge base for future projects and interviews |
+| 🔥 | Hold each other accountable with a consistent daily/weekly cadence |
+| ✍️ | Practice clear, concise technical writing |
 
-1. Pick a tool that hasn't been covered yet (check `tools/` or the [Tool Index](#tool-index) below).
-2. Install/run it in a **safe, isolated environment** (a VM, container, or a lab you own — never against systems you don't have explicit permission to test).
-3. Create a new write-up using the [template](#write-up-template) below.
-4. Save it under `tools/<category>/<tool-name>.md`.
-5. Open a pull request. A teammate reviews it, then it's merged.
-6. Update the [Tool Index](#tool-index) table with the new entry.
+---
 
-## Repository structure
+## ⚙️ How It Works
+
+```
+   1. Pick a tool        →   Check the Tool Index — grab one that isn't covered yet
+   2. Run it safely       →   Own VM, container, or an authorized lab only
+   3. Write it up         →   Copy template.md into the right category folder
+   4. Open a PR            →   One teammate reviews before merge
+   5. Update the index     →   Add your row to the Tool Index table
+```
+
+📄 See [`tools/scanning/nmap.md`](./tools/scanning/nmap.md) for a filled-out example.
+
+---
+
+## 🗂️ Repository Structure
 
 ```
 daily-sec-tools/
 ├── README.md
 ├── template.md
 ├── tools/
-│   ├── recon/
-│   ├── scanning/
-│   ├── exploitation/
-│   ├── forensics/
-│   ├── web-security/
-│   ├── network-security/
-│   └── defense-blue-team/
+│   ├── recon/                 🔍
+│   ├── scanning/               📡
+│   │   └── nmap.md             ← example write-up
+│   ├── exploitation/           💥
+│   ├── forensics/              🧬
+│   ├── web-security/           🌐
+│   ├── network-security/       🔌
+│   └── defense-blue-team/      🛡️
 └── resources/
-    └── links.md
+    └── links.md                🔗  shared cheat sheets, lab links, reading list
 ```
 
-## Write-up template
+---
 
-```markdown
-# Tool Name
+## 📊 Tool Index
 
-**Category:** e.g. Reconnaissance / Scanning / Exploitation / Forensics / Defense
-**Date covered:** YYYY-MM-DD
-**Author:** @github-handle
+| # | Tool | Category | Author | Date |
+|---|------|----------|--------|------|
+| 01 | [Nmap](./tools/scanning/nmap.md) | 📡 Scanning | @example-handle | 2026-08-01 |
 
-## What it is
-Brief description of the tool and what problem it solves.
+> _Add a new row here every time a write-up is merged._
 
-## Installation
-How to install it (OS/package manager/Docker, etc.)
+---
 
-## Basic usage
-Core commands or workflow with example output.
+## ⚠️ Ground Rules
 
-## Use case walkthrough
-A short practical example — what you ran and what it revealed.
+- 🚫 **Authorized targets only** — your own lab, intentionally vulnerable VMs (DVWA, Metasploitable), or platforms like HTB/TryHackMe. See [`resources/links.md`](./resources/links.md).
+- ✂️ Keep write-ups **concise** — skimmable in under 5 minutes.
+- 📎 Cite official docs and credible sources.
+- 🔒 No credentials, private IPs, or client-identifiable data in any write-up or screenshot.
 
-## Key takeaways
-- Bullet points on what's genuinely useful
-- Gotchas, limitations, or things that surprised you
+---
 
-## References
-- Official docs / relevant links
-```
+## 🤝 Contributing
 
-## Tool index
+1. Fork or branch from `main`
+2. Add your write-up using [`template.md`](./template.md)
+3. Open a PR with a short summary of the tool
+4. Get one review before merging
 
-| Tool | Category | Covered by | Date |
-|------|----------|-----------|------|
-| _example: Nmap_ | Scanning | @handle | 2026-08-01 |
+---
 
-*(Update this table as new write-ups are added.)*
-
-## Ground rules
-
-- ⚠️ **Only test tools against systems you own or are explicitly authorized to test** (your own lab, intentionally vulnerable VMs like DVWA/Metasploitable, or platforms like HTB/TryHackMe).
-- Keep write-ups concise and practical — future-you (and teammates) should be able to skim it in under 5 minutes.
-- Cite official documentation and credible sources.
-- No credentials, private IPs, or client-identifiable data in any write-up or screenshot.
-
-## Contributing
-
-1. Fork or branch from `main`.
-2. Add your write-up following the template above.
-3. Open a PR with a short summary of the tool.
-4. Get one review before merging.
-
-## License
+## 📜 License
 
 This repository is for internal team learning. Add a license (e.g. MIT) if you plan to make it public.
+
+<div align="center">
+
+**Happy hacking, responsibly. 🐛🔐**
+
+</div>
