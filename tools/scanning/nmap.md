@@ -6,7 +6,7 @@
 |---|---|
 | **Category** | 📡 Scanning |
 | **Date covered** | 2026-08-01 |
-| **Author** | @example-handle |
+| **Author** | @cyberChef-Aidoo |
 
 ---
 
