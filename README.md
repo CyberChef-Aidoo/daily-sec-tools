@@ -107,8 +107,7 @@ daily-sec-tools/
 
 ## 📜 License
 
-This repository is for internal team learning. Add a license (e.g. MIT) if you plan to make it public.
-
+This repository is for the general public. 
 <div align="center">
 
 **Happy hacking, responsibly. 🐛🔐**
