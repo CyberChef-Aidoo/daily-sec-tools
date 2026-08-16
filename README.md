@@ -54,28 +54,6 @@ This repository is a shared learning journal. Each day, a team member picks a ne
 
 📄 See [`tools/scanning/nmap.md`](./tools/scanning/nmap.md) for a filled-out example.
 
----
-
-## 🗂️ Repository Structure
-
-```
-daily-sec-tools/
-├── README.md
-├── template.md
-├── tools/
-│   ├── recon/                 🔍
-│   ├── scanning/               📡
-│   │   └── nmap.md             ← example write-up
-│   ├── exploitation/           💥
-│   ├── forensics/              🧬
-│   ├── web-security/           🌐
-│   ├── network-security/       🔌
-│   └── defense-blue-team/      🛡️
-└── resources/
-    └── links.md                🔗  shared cheat sheets, lab links, reading list
-```
-
----
 
 ## 📊 Tool Index
 
