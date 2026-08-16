@@ -1,4 +1,4 @@
-# DNS & ICMP Traffic Analysis — Diagnosing a "Destination Port Unreachable" Incident
+# 💎 DNS & ICMP Traffic Analysis — Diagnosing a "Destination Port Unreachable" Incident
 
 **Category:** Network Security / Traffic Analysis
 **Tools used:** `tcpdump`
@@ -56,3 +56,5 @@ Escalate to the team responsible for the DNS server at `203.0.113.2` to check wh
 - How to read `tcpdump` output for DNS (`.domain`) and ICMP traffic.
 - What an ICMP "port unreachable" message actually indicates about the *destination* host, not just the network path.
 - How to trace a user-facing symptom ("can't load a website") back to the specific protocol and layer responsible, rather than assuming it's the web server at fault.
+
+
