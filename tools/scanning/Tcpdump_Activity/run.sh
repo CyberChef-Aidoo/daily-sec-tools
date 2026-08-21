@@ -1,13 +1,3 @@
-#!/bin/bash
-#
-# icmp_capture.sh — Automate an ICMP-only tcpdump capture.
-#
-# Usage:
-#   ./icmp_capture.sh                     # auto-detect interface, capture until Ctrl+C
-#   ./icmp_capture.sh eth0                # specify interface
-#   ./icmp_capture.sh eth0 60             # specify interface + duration in seconds
-#
-# Requires: tcpdump, sudo privileges (CAP_NET_RAW)
 
 set -euo pipefail
 
