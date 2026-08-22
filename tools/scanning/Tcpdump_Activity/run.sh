@@ -13,7 +13,7 @@ if [ -z "$IFACE" ]; then
     echo "No interface specified — auto-detected: $IFACE"
 fi
 
-# ---- 2. Optional capture duration ----
+
 DURATION="${2:-}"
 
 # ---- 3. Output file (timestamped, so runs never overwrite each other) ----
