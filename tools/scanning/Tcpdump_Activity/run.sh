@@ -1,7 +1,6 @@
 
 set -euo pipefail
 
-# ---- 1. Determine the interface ----
 IFACE="${1:-}"
 if [ -z "$IFACE" ]; then
     # Pick the first UP interface that isn't loopback
